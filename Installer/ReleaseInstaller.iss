@@ -2,12 +2,12 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Downloads Manager" 
-#define MyAppVersion "0.1.0"
+#define MyAppVersion "0.1.6"
 #define MyAppExeName "DownloadsManager.exe"
 #define InstallDir "..\Installer\"
 #define Dir "..\DownloadsManager\Bin\Release"
 #define Path "..\DownloadsManager\Bin\Release\DownloadsManager.exe"
-#define PathToNet "E:\Study\KPI\3 eo?n\DownloadsManager\Installer\"
+#define PathToNet "D:\GitHub\DownloadsManager\Installer\"
 #define Name GetStringFileInfo(Path, "ProductName")
 #define Publisher GetStringFileInfo(Path, "CompanyName")
 #define ExeName Name + ".exe" 
@@ -32,7 +32,7 @@ DefaultDirName={pf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
 AllowNoIcons=yes
 OutputDir={#InstallDir}
-OutputBaseFilename={#MyAppName} v{#AppVersion} Release Setup
+OutputBaseFilename={#MyAppName} v{#MyAppVersion} Setup
 Compression=lzma
 SolidCompression=yes
 ;AppName={#Name}
